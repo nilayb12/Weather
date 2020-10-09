@@ -28,7 +28,7 @@ window.addEventListener('load', ()=> {
                 temperatureDescription.textContent=main+' - '+description;
                 locationTimezone.textContent=data.sys.country+'/'+data.name;
 
-                var iconUrl="http://openweathermap.org/img/wn/"+icon+"@2x.png";
+                var iconUrl="https://openweathermap.org/img/wn/"+icon+"@2x.png";
                 weatherIcon.innerHTML="<img src='"+iconUrl+"'>";
                 
                 temperatureSection.addEventListener('click',()=>{
