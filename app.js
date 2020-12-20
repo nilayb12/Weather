@@ -32,11 +32,11 @@ window.addEventListener('load', ()=> {
                 weatherIcon.innerHTML="<img src='"+iconUrl+"'>";
                 
                 temperatureSection.addEventListener('click',()=>{
-                    if(temperatureSpan.textContent==="F"){
-                        temperatureSpan.textContent="C";
-                        temperatureDegree.textContent=(temp-32)*(5/9);
+                    if(temperatureSpan.textContent==="℉"){
+                        temperatureSpan.textContent="℃";
+                        temperatureDegree.textContent=Math.round((temp-32)*(5/9));
                     } else {
-                        temperatureSpan.textContent="F";
+                        temperatureSpan.textContent="℉";
                         temperatureDegree.textContent=temp;
                     }
                 });
